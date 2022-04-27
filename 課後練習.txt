@@ -1,22 +1,27 @@
 user story/
 Acceptance Criteria
 
-1.�@���@�ӷf�����H�A�ڥi�H�j�M�Ҧb�a�P�D�����ȡA���ڥi�H�f���̪񪺨���/
-Given ���}�ҩw�쪺�f�����H�}�ҵ{��
-When �I���H�w��s��
-Then �|���X���w��̪񪺨���
+1.作為一個搭車的人，我可以搜尋所在地周遭的乘客，讓我可以搭乘最近的車輛/
+Given 有開啟定位的搭車的人開啟程式
+When 點擊以定位叫車
+Then 會跳出離定位最近的車輛
 
-2.�@���@�ӷf�����H�A�ڥi�H�j�M�Y�Ӧa�}�A���ڥi�H�s����Y�өw�I/
-Given �f�����H�}�ҵ{�����I���H�a�}�s��
-When ��J�a�}�I���j�M
-Then �|���X���Ӧa�}�̪񪺨���
+2.作為一個搭車的人，我可以搜尋某個地址，讓我可以叫車到某個定點/
+Given 搭車的人開啟程式並點擊以地址叫車
+When 輸入地址點擊搜尋
+Then 會跳出離該地址最近的車輛
 
-3.�@���@�ӪŶ����q���A�ڥi�H�Q�ݭn�s�����H�j�M��A���ڥi�H����/
-Given ���Ŷ����q���I���i����
-When �����ȭn�D�W�����a�I���ӥq���̪�
-Then �|���X�ӵ������ݨD
+3.作為一個空閒的司機，我可以被需要叫車的人搜尋到，讓我可以載客/
+Given 當空閒的司機點擊可載客
+When 有乘客要求上車的地點離該司機最近
+Then 會跳出該筆乘車需求
 
-4.�@���@�ӥ��b���Ȫ��q���A�ڥi�H�ǰt�W���a�I���ڲ{�b���ȤH���U���a�I�̪񪺤U�@�ӫȤH/
-Given �����b���Ȫ��q���I���n�~����U�@�ӫȤH
-When �����ȭn�D�W�����a�I���ӥq���{�b���ȤH�U���a�I�̪�
-Then �|���X�ӵ������ݨD
+4.作為一個正在載客的司機，我可以匹配上車地點離我現在的客人的下車地點最近的下一個客人/
+Given 當正在載客的司機點擊要繼續載下一個客人
+When 有乘客要求上車的地點離該司機現在的客人下車地點最近
+Then 會跳出該筆乘車需求
+
+5.做為一個到站的乘客，我可以評分
+Given 當司機載客完成
+When 乘客點擊評分
+Then 會跳出評分系統供乘客選擇分數
